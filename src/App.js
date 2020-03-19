@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.scss';
+import { Switch, Route } from 'react-router-dom';
+
 import Header from './Header/Header';
 import NotFound from './NotFound/NotFound';
 
 function App() {
   return (
     <main>
-      <Header />
-      <NotFound />
+      <Switch>
+        <Route path={'/'} render={() => <Header />} />
+        <Route component={() => <NotFound />} />
+      </Switch>
     </main>
   );
 }
