@@ -1,0 +1,16 @@
+.not-found {
+  width: 100vw;
+  height: 60vh;
+  margin: 0;
+  background-size: cover;
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 500px;
+    text-align: center;
+    background: url('../images/waves.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
