@@ -1,0 +1,50 @@
+.landing-section {
+  margin: 2rem;
+  height: 70vh;
+  display: flex;
+  div {
+    width: 50vw;
+    height: 80vh;
+  }
+  animation: 1.5s linear fade-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.div-message {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    font-size: 7rem;
+    color: #a0c2f6;
+  }
+  h3 {
+    font-size: 1.5rem;
+    width: 13vw;
+    text-align: left;
+    margin-left: -20vw;
+  }
+}
+.div-colored {
+  background-color: #a0c2f6;
+}

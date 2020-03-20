@@ -1,24 +1,29 @@
 header {
   height: 10vh;
   width: 100vw;
-  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
   img {
-    width: 10vw;
+    margin: -1rem 1rem;
+    width: 5.75vw;
     transition: .5s ease-in-out;
     &:hover {
-      transform: scale(1.12);
-      transition: .3s ease-in-out;
+      transform: scale(1.05);
+      transition: .4s ease-in-out;
       cursor: pointer;
     }
   }
+  animation: 1.5s linear fade-in;
+}
+
+.link {
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 
 nav {
   width: 50vw;
-  margin: 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -28,10 +33,20 @@ a {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  margin: 2rem;
+  margin: 1rem;
+  margin-top: 3rem;
   transition: .5s ease-in-out;
   &:hover {
     transform: scale(1.12);
     transition: .3s ease-in-out;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
