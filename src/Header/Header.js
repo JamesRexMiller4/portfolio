@@ -6,7 +6,7 @@ import logo from '../images/tyrannosaurus-rex.svg';
 const Header = () => {
   return ( 
     <header>
-      <Link to={'/home'} className="link"><img src={logo} alt='t-rex skull'/></Link>
+      <Link to={'/'} className="link"><img src={logo} alt='t-rex skull'/></Link>
       <nav>
         <Link to={'/about'}><a href="/about">About</a></Link>
         <Link to={'/projects'}><a href='/projects'>Projects</a></Link>
