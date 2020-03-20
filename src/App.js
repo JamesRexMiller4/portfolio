@@ -10,7 +10,7 @@ function App() {
     <body>
     <Header />
     <Switch>
-      <Route path={'/'} render={() => <Home />} />
+      <Route exact path={'/'} render={() => <Home />} />
       <Route component={() => <NotFound />} />
     </Switch>
     </body>
