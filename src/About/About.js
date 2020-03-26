@@ -5,7 +5,6 @@ import './About.scss';
 const About = () => {
   return ( 
     <main>
-      <Header />
       <section>
         <div>
         <p>
