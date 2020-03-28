@@ -92,14 +92,14 @@ const About = () => {
         <div className='experience fade'>
         <img className='family-pic' src={familyPic} alt="a family with margaritas in hand"/>
         <p>
-          <strong>I have lived an unconventional life, and that is why I remain so curious.</strong> <br /><br />There is no greater sense of excitement and hope when 
+          <strong>I have lived an unconventional life, and that is why I remain so curious.</strong> <br /><br />There is no greater sense of excitement and hope than when 
           you embark on a new adventure.
           <br /><br />
-          That's why in August of 2019, I decided to enroll at the Turing School of Software and Design to learn software engineering.
+          That's why, in August of 2019, I decided to enroll at the Turing School of Software and Design.
           <br /><br />
-          Easily one of the best decisions I have made in my life, because it opened a world of possibilities for me. <br /><br />With a never ending amount of 
-          new technologies and paradigms to learn and master, my propensity for diving into rabbit holes and learning ALL THE THINGS will forever remain a work
-          in progress (kinda like this website).
+          Which ended up being one of the best decisions I have made in my life. A world of possibilities has now been opened to me. <br /><br />With a never ending amount of 
+          new technologies and paradigms to master, my propensity for diving into rabbit holes and learning ALL THE THINGS will remain unquelled ever more.
+          <br /><br /> I am humbled and excited by the prospects of forever being a work in progress (kinda like this website!).
         </p>
         </div>
         <div className='contact fade'>
