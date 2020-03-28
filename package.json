@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "react-router-dom": "^5.1.2",
     "vara": "^1.2.0"
