@@ -1,15 +1,49 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.scss';
 import mountainPic from '../images/mountain-pic.jpg';
 import familyPic from '../images/family-pic.jpg';
 import childPic from '../images/child-pic.jpg';
+import Vara from 'vara';
 
 const About = () => {
+  useEffect(() => {
+    let fontSize = 190;
+if(window.screen.width < 700) 
+  fontSize = 100;
+else if(window.screen.width < 1200)
+  fontSize= 150;
+
+  var vara = new Vara("#container","https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json",[{
+    text:"Hello!",
+    x:20,
+    y:20,
+    id:"fetch",
+    strokeWidth:2
+  }],{
+    fontSize: fontSize,
+    textAlign: "center"
+  });
+  vara.ready(function(){
+    var parent = document.querySelector("#container");
+    var svg = parent.querySelector("svg");
+    svg.setAttribute("width",parent.clientWidth);
+    svg.setAttribute("height",parent.clientHeight);
+    var container = vara.get("fetch").container;
+    vara.setPosition(container,{
+    x:10,
+    y:50,
+    },{
+    x:true,
+    y:true
+    })
+  })
+  }, [])
   return ( 
     <main>
       <section>
+        <div id="container"></div>
         <div className='intro'>
-        <img className='mountain-pic' src={mountainPic} alt='group of people posing for a photo while skiing, with a mountain range in the background'/>
+        <img className='mountain-pic' src={mountainPic} alt='group of people posing while skiing, with a mountain range in the background'/>
         <p>
           Hello! <br /><br />Welcome to my personal website. My name is James Rex Miller IV, 
           but typically I go by Jim, sometimes JimJames. I am a Front End engineer who 
@@ -31,7 +65,7 @@ const About = () => {
         <img className='child-pic' src={childPic} alt='two children opening Christmas presents'/>
         </div>
         <div className='experience'>
-        <img className='family-pic' src={familyPic} alt="a family photo with margaritas in hand"/>
+        <img className='family-pic' src={familyPic} alt="a family with margaritas in hand"/>
         <p>
           I have lived an unconventional life, and I think that is why I remain so curious. There is no greater sense of excitement and hope when 
           you embark on a new adventure. For most of professional life I have been searching for the place that felt like home. While the sales 
