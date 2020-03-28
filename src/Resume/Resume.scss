@@ -1,0 +1,14 @@
+.resume-main {
+  padding: 10vw 20vw;
+  img {
+    width: 65vw;
+    box-shadow: 8px 8px 8px -6px black;
+    border: 1px solid black;
+    transition: 2s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      transition: 2s ease-in-out;
+      box-shadow: 8px 8px 8px -6px #f7f7f7;
+    }
+  }
+}
