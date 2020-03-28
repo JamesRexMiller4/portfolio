@@ -1,14 +1,42 @@
 .resume-main {
-  padding: 10vw 20vw;
+  padding: 5vw 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   img {
-    width: 65vw;
+    width: 30vw;
     box-shadow: 8px 8px 8px -6px black;
     border: 1px solid black;
     transition: 2s ease-in-out;
+    z-index: 2;
     &:hover {
-      transform: scale(1.01);
-      transition: 2s ease-in-out;
+      margin-top: 35vh;
+      margin-bottom: 5vh;
+      transform: scale(2);
+      transition: 1s ease-in-out;
       box-shadow: 8px 8px 8px -6px #f7f7f7;
+      cursor: pointer;
     }
+  }
+}
+  .download-link {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: -2.75rem;
+    color: #fff;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    &:hover {
+      animation: lightshow 8s linear infinite;
+    }
+}
+
+@keyframes lightshow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
   }
 }
