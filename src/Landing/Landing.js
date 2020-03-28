@@ -8,7 +8,7 @@ const Landing = () => {
       <section className='landing-section'>
         <div className='div-message'>
           <h2>WELCOME</h2>
-          <h3>TO JAMES REX MILLER IV's PERSONAL SITE</h3>
+          <h3>TO JAMES REX MILLER IV's WEBSITE</h3>
         </div>
         <div className='div-colored'>
           <BabyYoda/>

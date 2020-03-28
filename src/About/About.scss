@@ -1,5 +1,6 @@
 .intro {
   margin: 0rem 4rem;
+  margin-bottom: 4rem;
   display: flex;
   font-size: 1.75rem;
   p {
@@ -8,17 +9,24 @@
   .mountain-pic {
     width: 40vw;
   }
+  strong {
+    font-size: 4rem;
+  }
 }
 
 .lifestory {
-  margin: 4rem;
+  padding: 4rem;
   display: flex;
   font-size: 1.75rem;
+  background-color: #f7f7f7;
   p {
     padding: 2rem;
   }
   .child-pic {
     width: 40vw;
+  }
+  strong {
+    font-size: 4rem;
   }
 }
 
@@ -32,6 +40,9 @@
   .family-pic {
     width: 40vw;
   }
+  strong {
+    font-size: 4rem;
+  }
 }
 
 
@@ -44,4 +55,29 @@
 
 #container svg {
   min-height: 700px;
+}
+
+.neon {
+  font-size: 16em;
+  font-family: 'Pacifico';
+  color: #00b3ff;
+  animation: neon 3s linear infinite;
+  animation-duration: 4s;
+}
+
+@keyframes neon {
+  0%,100% {
+    color: #00b3ff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff,
+  }
+  5%,95% {
+    color: #fff;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+.hidden {
+  display: none;
 }

@@ -4,14 +4,15 @@ import mountainPic from '../images/mountain-pic.jpg';
 import familyPic from '../images/family-pic.jpg';
 import childPic from '../images/child-pic.jpg';
 import Vara from 'vara';
+import $ from 'jquery';
 
 const About = () => {
   useEffect(() => {
     let fontSize = 190;
-if(window.screen.width < 700) 
-  fontSize = 100;
-else if(window.screen.width < 1200)
-  fontSize= 150;
+// if(window.screen.width < 700) 
+//   fontSize = 100;
+// else if(window.screen.width < 1200)
+//   fontSize= 150;
 
   var vara = new Vara("#container","https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json",[{
     text:"Hello!",
@@ -42,43 +43,43 @@ else if(window.screen.width < 1200)
     <main>
       <section>
         <div id="container"></div>
+        <h2 className='neon hidden'>Hello!</h2>
         <div className='intro'>
         <img className='mountain-pic' src={mountainPic} alt='group of people posing while skiing, with a mountain range in the background'/>
         <p>
-          Hello! <br /><br />Welcome to my personal website. My name is James Rex Miller IV, 
-          but typically I go by Jim, sometimes JimJames. I am a Front End engineer who 
-          has worn many hats. Prior to software development I worked in sales in a myriad 
-          of industries: financial services, logistics, hospitality, event planning. I even did a stint 
-          as a substitute teacher. 
+          <strong>Welcome to my website.</strong><br /><br />
+          My name is James Rex Miller IV.
+          <br /><br /> Typically I go by Jim (sometimes JimJames), but feel free to call
+          me whatever you like.
+          <br /><br />I am a Front End engineer who 
+          has worn many hats. 
+          <br /><br />No, seriously.
+          <br /><br /> Like at least 3 hats.🎓🧢🎩  
         </p>
         </div>
         <div className='lifestory'>
         <p>
-          In addition to working in many industries, I have lived in many places. Originally, I was born in 
-          Chicago, IL. But then I lived in a lot of different parts of Indiana, before moving back to Chicago at 
-          the beginning of fourth grade where I would remain for the rest of grade school. 
+          <strong>In addition to working in many industries,<br /> I have lived in many places.</strong> <br/><br/>Originally, I was born in 
+          Chicago, IL. But since then I have lived in the Bay Area, Indiana, Los Angeles, Tucson, and Denver. 
           <br /><br />
-          Then I hopped over to the Bay Area for high school, before heading off to Tuscon, Arizona to attend the University
-          of Arizona where I got my Bachelor's Degree in Communications, with a minor in Business Administration. Since college, 
-          I have moved back to Chicago, moved to Los Angeles, and moved to Denver, Colorado where I currently reside. 
+          While in Tuscon, I attended the University
+          of Arizona and got a Bachelor's Degree in Communications, with a minor in Business Administration.
+
+          <br /><br />Beardown! 
         </p>
         <img className='child-pic' src={childPic} alt='two children opening Christmas presents'/>
         </div>
         <div className='experience'>
         <img className='family-pic' src={familyPic} alt="a family with margaritas in hand"/>
         <p>
-          I have lived an unconventional life, and I think that is why I remain so curious. There is no greater sense of excitement and hope when 
-          you embark on a new adventure. For most of professional life I have been searching for the place that felt like home. While the sales 
-          career gave me gifts in articulation and development in professionalism, it left me craving something more. 
+          <strong>I have lived an unconventional life, and that is why I remain so curious.</strong> <br /><br />There is no greater sense of excitement and hope when 
+          you embark on a new adventure.
           <br /><br />
-          That's why in August of 2019 I decided to make the career switch into software development by enrolling in to the FrontEnd engineering 
-          program at the Turing School of Software and Design. For the next 7 months I learned about the fundamentals of Object Oriented Programming, 
-          Test Driven Development, UI/UX Design, and the moral intersections we as a society find ourselves as we integrate technology more and more into
-          our daily lives.
+          That's why in August of 2019, I decided to enroll at the Turing School of Software and Design to learn software engineering.
           <br /><br />
-          Enrolling into Turing was the best decision I have made in my life, because it opened a world of possibilities for me. With a never ending amount of 
+          Easily one of the best decisions I have made in my life, because it opened a world of possibilities for me. <br /><br />With a never ending amount of 
           new technologies and paradigms to learn and master, my propensity for diving into rabbit holes and learning ALL THE THINGS will forever remain a work
-          work in progress (kinda like this website).
+          in progress (kinda like this website).
         </p>
         </div>
         <div>
