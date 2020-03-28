@@ -43,22 +43,22 @@ const About = () => {
       })
     })
 
-    $(window).on("load",function() {
-      $(window).scroll(function() {
-        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-        $(".fade").each(function() {
-          var objectBottom = $(this).offset().top + $(this).outerHeight() - 300;
-          
-          if (objectBottom < windowBottom) {
-            if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);} //eslint-disable-line
-          } else {
-            if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);} //eslint-disable-line
-          }
-        });
-      }).scroll();
-    });
-    }, [])
-    
+  }, [])
+  $(window).ready(function() {
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade").each(function() {
+        var objectBottom = $(this).offset().top + $(this).outerHeight() - 300;
+        
+        if (objectBottom < windowBottom) {
+          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);} //eslint-disable-line
+        } else {
+          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);} //eslint-disable-line
+        }
+      });
+    }).scroll();
+  });
+
   return ( 
     <main>
       <section>
