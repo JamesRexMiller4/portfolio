@@ -45,6 +45,15 @@
   }
 }
 
+.contact {
+  padding: 4rem;
+  font-size: 1.74rem;
+  text-align: center;
+  background-color: #f7f7f7;
+  strong {
+    font-size: 4rem;
+  }
+}
 
 #container {
   padding-top: 20vh;
@@ -80,4 +89,15 @@
 
 .hidden {
   display: none;
+}
+
+.icons {
+  img {
+    padding-top: 2rem;
+    width: 4rem;
+    &:hover {
+      cursor: pointer;
+    }
+    margin: 1rem;
+  }
 }

@@ -3,48 +3,68 @@ import './About.scss';
 import mountainPic from '../images/mountain-pic.jpg';
 import familyPic from '../images/family-pic.jpg';
 import childPic from '../images/child-pic.jpg';
+import gmail from '../images/gmail.svg';
+import linkedIn from '../images/linkedin.svg';
+import github from '../images/github.svg';
+import twitter from '../images/twitter.svg';
 import Vara from 'vara';
 import $ from 'jquery';
 
 const About = () => {
   useEffect(() => {
     let fontSize = 190;
-// if(window.screen.width < 700) 
-//   fontSize = 100;
-// else if(window.screen.width < 1200)
-//   fontSize= 150;
+    if(window.screen.width < 700) 
+      fontSize = 100;
+    else if(window.screen.width < 1200)
+      fontSize= 150;
 
-  var vara = new Vara("#container","https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json",[{
-    text:"Hello!",
-    x:20,
-    y:20,
-    id:"fetch",
-    strokeWidth:2
-  }],{
-    fontSize: fontSize,
-    textAlign: "center"
-  });
-  vara.ready(function(){
-    var parent = document.querySelector("#container");
-    var svg = parent.querySelector("svg");
-    svg.setAttribute("width",parent.clientWidth);
-    svg.setAttribute("height",parent.clientHeight);
-    var container = vara.get("fetch").container;
-    vara.setPosition(container,{
-    x:10,
-    y:50,
-    },{
-    x:true,
-    y:true
+    var vara = new Vara("#container","https://cdn.jsdelivr.net/gh/akzhy/vara/fonts/Pacifico/PacificoSLO.json",[{
+      text:"Hello!",
+      x:20,
+      y:20,
+      id:"fetch",
+      strokeWidth:2
+    }],{
+      fontSize: fontSize,
+      textAlign: "center"
+    });
+    vara.ready(function(){
+      var parent = document.querySelector("#container");
+      var svg = parent.querySelector("svg");
+      svg.setAttribute("width",parent.clientWidth);
+      svg.setAttribute("height",parent.clientHeight);
+      var container = vara.get("fetch").container;
+      vara.setPosition(container,{
+      x:10,
+      y:50,
+      },{
+      x:true,
+      y:true
+      })
     })
-  })
-  }, [])
+    }, [])
+
+    $(window).on("load",function() {
+      $(window).scroll(function() {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        $(".fade").each(function() {
+          var objectBottom = $(this).offset().top + $(this).outerHeight() - 300;
+          
+          if (objectBottom < windowBottom) {
+            if ($(this).css("opacity") === 0) {$(this).fadeTo(500,1);}
+          } else {
+            if ($(this).css("opacity") === 1) {$(this).fadeTo(500,0);}
+          }
+        });
+      }).scroll();
+    });
+
   return ( 
     <main>
       <section>
         <div id="container"></div>
         <h2 className='neon hidden'>Hello!</h2>
-        <div className='intro'>
+        <div className='intro fade'>
         <img className='mountain-pic' src={mountainPic} alt='group of people posing while skiing, with a mountain range in the background'/>
         <p>
           <strong>Welcome to my website.</strong><br /><br />
@@ -57,7 +77,7 @@ const About = () => {
           <br /><br /> Like at least 3 hats.🎓🧢🎩  
         </p>
         </div>
-        <div className='lifestory'>
+        <div className='lifestory fade'>
         <p>
           <strong>In addition to working in many industries,<br /> I have lived in many places.</strong> <br/><br/>Originally, I was born in 
           Chicago, IL. But since then I have lived in the Bay Area, Indiana, Los Angeles, Tucson, and Denver. 
@@ -69,7 +89,7 @@ const About = () => {
         </p>
         <img className='child-pic' src={childPic} alt='two children opening Christmas presents'/>
         </div>
-        <div className='experience'>
+        <div className='experience fade'>
         <img className='family-pic' src={familyPic} alt="a family with margaritas in hand"/>
         <p>
           <strong>I have lived an unconventional life, and that is why I remain so curious.</strong> <br /><br />There is no greater sense of excitement and hope when 
@@ -82,9 +102,16 @@ const About = () => {
           in progress (kinda like this website).
         </p>
         </div>
-        <div>
+        <div className='contact fade'>
         <p>
-          If you would like to contact me for any opportunities I can be reached via email at james.rex.miller.4@gmail.com.
+          <strong>Let's Keep in Touch!</strong>
+          <br/><br/>Feel free to contact me regarding any opportunities, or just to say hi 😁.
+           <div className='contact-icons'>
+            <span className='icons'><img src={gmail} alt='mail icon' onClick={() => window.open("mailto:James.Rex.Miller.4@gmail.com.com")}/></span>
+            <span className='icons'><img src={github} alt='github icon' onClick={() => window.open("https://github.com/JamesRexMiller4", "_blank")}/></span>
+            <span className='icons'><img src={linkedIn} alt='linkedIn icon' onClick={() => window.open("https://www.linkedin.com/in/jamesrexmiller4/", "_blank")}/></span>
+            <span className='icons'><img src={twitter} alt='twitter icon' onClick={() => window.open("https://twitter.com/JamesRexMiller4", "_blank")}/></span>
+           </div>
         </p>
         </div>
       </section>
