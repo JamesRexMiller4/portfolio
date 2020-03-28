@@ -42,7 +42,6 @@ const About = () => {
       y:true
       })
     })
-    }, [])
 
     $(window).on("load",function() {
       $(window).scroll(function() {
@@ -58,7 +57,8 @@ const About = () => {
         });
       }).scroll();
     });
-
+    }, [])
+    
   return ( 
     <main>
       <section>
