@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
           </div>
         </div>
         <div className='summary-div'>
-          <p>{props.summary}</p>
+          <p>{props.description}</p>
         </div>
       </div>
       <div className='right-half-project-card-div'>
