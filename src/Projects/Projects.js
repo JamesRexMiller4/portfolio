@@ -4,7 +4,7 @@ import projectsData from './projectsData';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 const Projects = () => {
-  let projects = projectsData.map(project => <ProjectCard {...project} />)
+  let projects = projectsData.map((project, i) => <ProjectCard key={i} {...project} />)
   return ( 
     <main>
       {projects}
