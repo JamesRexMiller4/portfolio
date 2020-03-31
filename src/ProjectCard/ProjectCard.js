@@ -17,6 +17,10 @@ const ProjectCard = (props) => {
     setCoordinates({x: offX, y: offY})
   }
 
+  const openApp = () => {
+    window.open(props.url, '_blank')
+  }
+
   return ( 
     <section className={`project-card-section  ${props.class}`}>
       <div className='left-half-project-card-div' onMouseMove={mouseMove} ref={titleDivRef} style={maskStyles}>
@@ -41,7 +45,7 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className='right-half-project-card-div'>
-        <div className='image-gif-div'></div>
+        <div className='image-gif-div' onClick={openApp}></div>
       </div>
     </section>
   );
