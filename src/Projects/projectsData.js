@@ -16,6 +16,18 @@ const projectsData = [
     title2: 'TRACTOR',
     class: 'refactor-tractor',
     description: 'A health metrics dashboard'
+  }, 
+  {
+    title1: 'PALETTE',
+    title2: 'PICKER',
+    class: 'palette-picker',
+    description: 'Generate, save, and edit color palettes'
+  },
+  {
+    title1: 'RANCID',
+    title2: 'TOMATILLOS',
+    class: 'rancid-tomatillos',
+    description: 'Rate movies in theaters now'
   }
 ]
 

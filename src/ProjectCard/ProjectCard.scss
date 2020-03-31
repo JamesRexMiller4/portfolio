@@ -172,3 +172,63 @@
     background: hsl(214, 90%, 54%);
   }
 }
+
+.palette-picker {
+  .image-gif-div{
+  background-image: url('../images/palette-picker.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/palette-picker-gif.gif');
+    }
+  }
+
+  p {
+    color: rgb(253, 205, 117);
+  }
+
+  .titleDiv {
+    color: rgb(253, 205, 117);
+  }
+
+  .clone {
+    color: rgb(255, 194, 80);
+  }
+
+  .div-divider {
+    border-color:rgb(255, 194, 80);
+  }
+  .right-half-project-card-div {
+    background: rgb(255, 194, 80);
+  }
+}
+
+.rancid-tomatillos {
+  .image-gif-div{
+  background-image: url('../images/rancid-tomatillos.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/rancid-tomatillos-gif.gif');
+    }
+  }
+
+  p {
+    color: rgb(253, 117, 169);
+  }
+
+  .titleDiv {
+    color: rgb(253, 117, 169);
+  }
+
+  .clone {
+    color: hsl(328, 78%, 80%);
+  }
+
+  .div-divider {
+    border-color:hsl(328, 78%, 80%);
+  }
+  .right-half-project-card-div {
+    background: hsl(328, 78%, 80%);
+  }
+}
