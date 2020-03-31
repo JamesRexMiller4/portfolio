@@ -1,4 +1,4 @@
-const projectsData = [
+export const projectsData = [
   {
     title: 'CONDENSATE',
     url: 'https://condensate-app.herokuapp.com/',
