@@ -1,3 +1,4 @@
+
 .project-card-section {
   margin: 4rem;
   display: flex;
@@ -6,7 +7,6 @@
   background: rgb(253, 251, 251);
   p {
     font-size: 1.75rem;
-    color: #D4BBAE;
     padding: 2rem;
   }
 
@@ -21,12 +21,6 @@
     position: absolute;
     margin-left: -1.5rem;
     box-shadow: 8px 8px 8px -6px black;
-    background-image: url('../images/condensate-dash.png');
-    background-size: cover;
-    cursor: pointer;
-    &:hover {
-      background-image: url('../images/condensate-gif.gif');
-    }
   }
   --maskX: 0;
   --maskY: 50;
@@ -48,7 +42,6 @@
 }
 
 .title-wrapper-div {
-  color: #D4BBAE;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -65,7 +58,7 @@
 }
 
 .div-divider {
-  border-bottom: 10px solid #f2dcca;
+  border-bottom: 10px solid;
   width: 4vw;
   margin-right: 2rem;
 }
@@ -74,7 +67,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #f2dcca;
   clip-path: polygon(0 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 100%, 0 100%);
 }
 
@@ -87,5 +79,96 @@
   height: stretch;
   display: flex;
   align-items: center;
-  background: #f2dcca;
+}
+
+
+.condensate {
+  .image-gif-div{
+  background-image: url('../images/condensate-dash.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/condensate-gif.gif');
+    }
+  }
+
+  p {
+    color: #D4BBAE;
+  }
+
+  .titleDiv {
+    color: #D4BBAE;
+  }
+
+  .clone {
+    color: #f2dcca;
+  }
+
+  .div-divider {
+    border-color: #f2dcca;
+  }
+  .right-half-project-card-div {
+    background: #f2dcca;
+  }
+}
+
+
+.consensus {
+  .image-gif-div{
+  background-image: url('../images/consensus.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/consensus-gif.gif');
+    }
+  }
+
+  p {
+    color: rgb(86, 173, 143);
+  }
+
+  .titleDiv {
+    color: rgb(86, 173, 143);
+  }
+
+  .clone {
+    color: #8ae6c7;
+  }
+
+  .div-divider {
+    border-color: #8ae6c7;
+  }
+  .right-half-project-card-div {
+    background: #8ae6c7;
+  }
+}
+
+.refactor-tractor {
+  .image-gif-div{
+  background-image: url('../images/refactorTractor.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/refactorTractor-gif.gif');
+    }
+  }
+
+  p {
+    color: rgb(12, 83, 150);
+  }
+
+  .titleDiv {
+    color: rgb(12, 83, 150);
+  }
+
+  .clone {
+    color: hsl(214, 90%, 54%);
+  }
+
+  .div-divider {
+    border-color:hsl(214, 90%, 54%);
+  }
+  .right-half-project-card-div {
+    background: hsl(214, 90%, 54%);
+  }
 }

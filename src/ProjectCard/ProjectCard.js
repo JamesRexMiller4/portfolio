@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
   }
 
   return ( 
-    <section className='project-card-section'>
+    <section className={`project-card-section  ${props.class}`}>
       <div className='left-half-project-card-div' onMouseMove={mouseMove} ref={titleDivRef} style={maskStyles}>
         <div className='titleDiv'>
           <div className='title-wrapper-div'>
