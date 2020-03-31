@@ -6,8 +6,14 @@ const ProjectCard = (props) => {
     <section className='project-card-section'>
       <div className='left-half-project-card-div'>
         <div className='title-div'>
-          <h2>{props.title}</h2>
-          <div>Divider</div>
+          <div className='title-wrapper-div'>
+            <h2>{props.title}</h2>
+            <div>Divider</div>
+          </div>
+          <div className='clone title-wrapper-div'>
+            <h2>{props.title}</h2>
+            <div>Divider</div>
+          </div>
         </div>
         <div className='summary-div'>
           <p>{props.summary}</p>
