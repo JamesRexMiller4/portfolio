@@ -1,4 +1,38 @@
-.title-div {
+.project-card-section {
+  margin: 4rem;
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  background: rgb(253, 251, 251);
+  p {
+    font-size: 1.75rem;
+    color: #D4BBAE;
+    padding: 2rem;
+  }
+
+  .left-half-project-card-div {
+    width: 50vw;
+    padding: 2rem;
+  }
+
+  .image-gif-div {
+    width: 40vw;
+    height: 40vh;
+    margin-left: -1.5rem;
+    box-shadow: 8px 8px 8px -6px black;
+    background-image: url('../images/condensate-dash.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/condensate-gif.gif');
+    }
+  }
+
+  --maskX: 0;
+  --maskY: 50;
+}
+
+.titleDiv {
   font-family: 'Poppins', sans-serif;
   h2 {
     font-size: 90px;
@@ -8,9 +42,27 @@
   position: relative;
 }
 
+.title2-div {
+  display: flex;
+  align-items: center;
+}
+
 .title-wrapper-div {
   color: #D4BBAE;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clone-title2-div {
+  display: flex;
+  align-items: center;
+}
+
+.div-divider {
+  border-bottom: 10px solid #f2dcca;
+  width: 4vw;
 }
 
 .clone {
@@ -18,4 +70,17 @@
   top: 0;
   left: 0;
   color: #f2dcca;
+  clip-path: polygon(0 0, calc(var(--maskX) * 1%) 0, calc(var(--maskY) * 1%) 100%, 0 100%);
+
+}
+
+.clone-divider {
+}
+
+.right-half-project-card-div {
+  width: 50vw;
+  height: stretch;
+  display: flex;
+  align-items: center;
+  background: #f2dcca;
 }
