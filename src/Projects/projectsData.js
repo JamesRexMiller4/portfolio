@@ -33,6 +33,13 @@ const projectsData = [
     class: 'rancid-tomatillos',
     description: 'Rate movies in theaters now',
     url: 'https://rancidtomatillos.herokuapp.com/'
+  }, 
+  {
+    title1: 'OVER',
+    title2: 'LOOK',
+    class: 'overlook',
+    description: 'A hotel booking app',
+    url: 'https://deathstar-hotel.herokuapp.com/'
   }
 ]
 

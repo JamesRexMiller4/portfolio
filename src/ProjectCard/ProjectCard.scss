@@ -232,3 +232,34 @@
     background: hsl(328, 78%, 80%);
   }
 }
+
+
+.overlook {
+  .image-gif-div{
+  background-image: url('../images/overlook.png');
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../images/overlook-gif.gif');
+    }
+  }
+
+  p {
+    color: rgb(187, 85, 255);
+  }
+
+  .titleDiv {
+    color: rgb(187, 85, 255);
+  }
+
+  .clone {
+    color: rgb(112, 1, 186);
+  }
+
+  .div-divider {
+    border-color:rgb(112, 1, 186);
+  }
+  .right-half-project-card-div {
+    background: rgb(112, 1, 186);
+}
+}
