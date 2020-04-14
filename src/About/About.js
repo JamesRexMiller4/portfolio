@@ -106,12 +106,12 @@ const About = () => {
         <p>
           <strong>Let's Keep in Touch!</strong>
           <br/><br/>Feel free to contact me regarding any opportunities, or just to say hi 😁.
-           <div className='contact-icons'>
+            <div className='contact-icons'>
             <span className='icons'><img src={gmail} alt='mail icon' onClick={() => window.open("mailto:James.Rex.Miller.4@gmail.com.com")} /></span>
             <span className='icons'><img src={github} alt='github icon' onClick={() => window.open("https://github.com/JamesRexMiller4", "_blank")} /></span>
             <span className='icons'><img src={linkedIn} alt='linkedIn icon' onClick={() => window.open("https://www.linkedin.com/in/jamesrexmiller4/", "_blank")} /></span>
             <span className='icons'><img src={twitter} alt='twitter icon' onClick={() => window.open("https://twitter.com/JamesRexMiller4", "_blank")} /></span>
-           </div>
+            </div>
         </p>
         </div>
       </section>
